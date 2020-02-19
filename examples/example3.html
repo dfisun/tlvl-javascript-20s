@@ -19,10 +19,10 @@
       return 'hello ' + name;
     }
     console.log(hello('bob'));
-    
+
     hi = 4;
     console.log(hi) // теперь имя 'hi' указывает на число
-    hi() // поскольку hi больше не является функцией,
+    // hi() // поскольку hi больше не является функцией,
     // получаем ошибку -- hi is not a function
 
     /*
@@ -38,7 +38,7 @@
 
     // более продвинутый пример
     function say(text, method) {
-      method(say);
+      method(text);
     }
     say('hi alert', alert);
     say('hi console', console.log);
