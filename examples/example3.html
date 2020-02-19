@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Урок 3 - функции</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    Откройте веб-консоль для наблюдения эффекта от работы кода.
+  </body>
+  <script>
+    function hi() {
+      alert('hi');
+    }
+
+    hi(); // вызов (запуск функции)
+    console.log(hi) // вывод функции как объекта в памяти
+
+    function hello(name) {
+      return 'hello ' + name;
+    }
+    console.log(hello('bob'));
+    
+    hi = 4;
+    console.log(hi) // теперь имя 'hi' указывает на число
+    hi() // поскольку hi больше не является функцией,
+    // получаем ошибку -- hi is not a function
+
+    /*
+     Таким образом, функции можно передавать как аргументы
+     в другие функции. Другими словами, использовать их
+     как значения вроде строк и чисел.
+    */
+    function sayHelloWith(method) {
+      method('hello');
+    }
+    sayHelloWith(alert); // внимание: скобки после alert не указываем!
+    sayHelloWith(console.log);
+
+    // более продвинутый пример
+    function say(text, method) {
+      method(say);
+    }
+    say('hi alert', alert);
+    say('hi console', console.log);
+
+  </script>
+</html>
