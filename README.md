@@ -5,6 +5,7 @@
 2. Средства версионирования кода - 12 февраля
 3. Функции в Javascript - 19 февраля
 4. Условные и логические операторы в Javascript - 4 марта
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
 
 ## Необходимые ссылки
 https://atom.io - основной редактор курса  
