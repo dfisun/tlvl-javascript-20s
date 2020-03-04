@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Accounting</title>
+    <meta charset="utf-8">
+    <style>
+      table, th, td {
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+    Accounting
+    <table>
+      <thead>
+        <tr>
+          <th>Expense Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Milk</td>
+          <td>1.00</td>
+        </tr>
+        <tr>
+          <td><strong>Total Expenses</strong></td>
+          <td><strong>15.00</strong></td>
+        </tr>
+     </tbody>
+    </table>
+  </body>
+  <script>
+     const MAX_EXPENSES = 150;
+     let currentExpenses = 0;
+
+     function addExpense(description, amount) {
+       if (amount < 0) {
+         return false;
+       }
+
+       if (currentExpenses + amount <= MAX_EXPENSES) {
+         currentExpenses += amount;
+         return true;
+       } else {
+         return false;
+       }
+     }
+
+     console.log('currentExpenses', currentExpenses);
+     console.log('add Milk (1.00)',
+                 addExpense('Milk', 1.00));
+     console.log('add Playstation 4 (399)',
+                 addExpense('Playstation 4', 399));
+     console.log('add Videogame (69.99)',
+                 addExpense('Videogame', 69.99));
+     console.log('try to hack (-45.26)',
+                 addExpense('Hacker', -45.26));
+     console.log('currentExpenses', currentExpenses);
+  </script>
+</html>
