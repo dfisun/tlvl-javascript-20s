@@ -11,5 +11,5 @@ https://atom.io - основной редактор курса
 https://teletype.atom.io/ - плагин для совместной работы над кодом
 
 ## Используемые учебники
-https://eloquentjavascript.net
-https://learn.javascript.ru
+https://eloquentjavascript.net  
+https://learn.javascript.ru  
