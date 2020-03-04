@@ -13,3 +13,6 @@ https://teletype.atom.io/ - плагин для совместной работ�
 ## Используемые учебники
 https://eloquentjavascript.net  
 https://learn.javascript.ru  
+
+## Ссылка на свежий Teletype
+https://github.com/dfisun/tlvl-javascript-20s/wiki/Atom-Teletype
