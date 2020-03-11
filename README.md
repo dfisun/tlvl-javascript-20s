@@ -7,7 +7,8 @@
 4. Условные и логические операторы в Javascript - 4 марта  
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table  
   https://css-tricks.com/complete-guide-table-element/  
-5. Массивы и циклы - 11 марта
+5. Массивы и циклы - 11 марта  
+  https://glitch.com/edit/#!/tlvl-accounting  
 
 ## Необходимые ссылки
 https://atom.io - основной редактор курса  
