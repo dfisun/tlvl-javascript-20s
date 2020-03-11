@@ -5,11 +5,13 @@
     <meta charset="utf-8">
   </head>
   <body>
-    Webpage contents
     <span id="word">word</span>
+    <button onclick="changeWord()">Change word</button>
   </body>
   <script>
-    document.getElementById('word').innerHTML = 'new';
+    function changeWord() {
+      document.getElementById('word').innerHTML = 'new';
+    }
     console.log(document.getElementById('word'));
   </script>
 </html>
