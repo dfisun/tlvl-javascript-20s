@@ -6,11 +6,15 @@
   </head>
   <body>
     <span id="word">word</span>
+    <p>
+    <input id="newWord" type="text">
+    <p>
     <button onclick="changeWord()">Change word</button>
   </body>
   <script>
     function changeWord() {
-      document.getElementById('word').innerHTML = 'new';
+      let newWord = document.getElementById('newWord').value;
+      document.getElementById('word').innerHTML = newWord;
     }
     console.log(document.getElementById('word'));
   </script>
